@@ -1,0 +1,192 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.logoText {
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+}
+
+.navbar {
+  background-color: rgb(13, 60, 118);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+.navbar > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar > ul > li {
+  padding: 0 2rem;
+}
+.navbar > ul > li > a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cardRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+}
+
+.card {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.457);
+}
+
+.cardTitle {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: rgb(13, 60, 118);
+}
+
+.cardContent {
+  margin: 0 1rem;
+}
+
+.cardImg {
+  width: 100%;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seatsImg {
+  width: 14px;
+}
+
+.cardPriceContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.cardDescription {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.invisibleCardDescription {
+  display: none;
+}
+.invisibleCardDescription.active {
+  display: inline-block;
+}
+
+.cardReadMoreBtn {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(7, 106, 106);
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  transition: all 0.15s ease-in;
+  margin-top: 1rem;
+}
+.cardReadMoreBtn:hover {
+  background-color: black;
+}
+
+.cardShowLessBtn {
+  cursor: pointer;
+  text-decoration: none;
+  display: none;
+  background-color: black;
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  transition: all 0.15s ease-in;
+  margin-top: 1rem;
+}
+.cardShowLessBtn:hover {
+  background-color: rgb(7, 106, 106);
+}
+
+.cardRentBtn {
+  text-decoration: none;
+  background-color: rgb(13, 60, 118);
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  transition: all 0.15s ease-in;
+}
+.cardRentBtn:hover {
+  background-color: rgb(11, 134, 223);
+  color: white;
+}
+
+.notAvailable {
+  color: red;
+  margin-bottom: 3rem;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.footerCopyRight {
+  background-color: rgb(13, 60, 118);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 970px) {
+  .cardRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cardRow {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin: 3rem;
+    gap: 2rem;
+  }
+  .cardImg {
+    width: 100%;
+    height: 50vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .navbar > ul > li {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .navbar {
+    font-size: 0.7rem;
+  }
+  .logoText {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=php.css.map */
